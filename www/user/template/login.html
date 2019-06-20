@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> this is just for a test </h1>
+<h1>result:{{result}}</h1>
+{% for book in booklist %}
+<li>{{book}}</li>
+{% empty %}
+{% endfor %}
+
+{% for k,v in result.items %}
+<li>{{k}}： {{v}}</li>
+{% empty %}
+{% endfor %}
+
+
+</body>
+</html>
