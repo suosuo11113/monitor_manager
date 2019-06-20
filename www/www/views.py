@@ -6,7 +6,6 @@ from django.http import HttpResponse
 os.chdir(os.path.split(os.path.realpath(sys.argv[0]))[0])
 sys.path.append("../")
 from  dingding import Dingding
-import chardet
 
 
 
@@ -23,7 +22,7 @@ def dingding_info(req):
 def dingding_warn(req):
     xiaoding = Dingding.Drobot("warn")
     if req.method == "POST":
-        msg = req.body.decode('unicode-escape')
+        msg = req.body.decode('GBK')
         xiaoding.send_text(msg)
     return HttpResponse()
 
@@ -31,7 +30,7 @@ def dingding_warn(req):
 def dingding_error(req):
     xiaoding = Dingding.Drobot("error")
     if req.method == "POST":
-        msg = req.body.decode('unicode-escape')
+        msg = req.body.decode('GBK')
         xiaoding.send_text(msg)
     return HttpResponse()
 
