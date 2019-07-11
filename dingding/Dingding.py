@@ -5,9 +5,9 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 
 level_dict = {
-               "info":"60e9e6c15f5e768fdb9f97f3a5bb2332f5de4e5d98467f7a915c450dc4bb19bc",
-               "warn":"6b79f67990cf8e1c8d77e416e84462fdb578bcf2c95847e3556c9fd768a65c90",
-               "error":"c8b5798f932d4da93789443ca712d6f7239dfd1a0b3f86f31da95929bac0b9f7",
+               "info":"123",
+               "warn":"456",
+               "error":"789",
              }
 webhook_head = "https://oapi.dingtalk.com/robot/send?access_token="
 class Drobot(DingtalkChatbot):
