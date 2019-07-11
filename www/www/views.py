@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 os.chdir(os.path.split(os.path.realpath(sys.argv[0]))[0])
 sys.path.append("../")
-from  dingding import Dingding
+from  lib import Dingding
 
 
 

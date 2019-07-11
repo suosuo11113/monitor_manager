@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #_*_ coding:utf-8 _*_
-from  dingding import  Dingding
+from  lib import  Dingding
 
 if __name__ == '__main__':
     #xiaoding_info = Dingding.Drobot("info")

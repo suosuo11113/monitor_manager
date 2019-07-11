@@ -3,7 +3,7 @@ from Crypto.Cipher import AES
 import binascii
 
 BS = AES.block_size
-AES_SECRET_KEY = '990AD535ED164E13990D7507CDDDF8E1'
+AES_SECRET_KEY = '990AD535ED164E13990D7507CDDDF8t1'
 IV = 'XXXXXXXXXXXXXXXX'
 ens = 'PoLKM%X3v#U@nb*NMxz!1O$U^WNvk1L2m84756'
 
@@ -32,7 +32,7 @@ def decrypt(text):
 
 if __name__ == '__main__':
     e = encrypt("缩缩缩")
-    d = encrypt("李艳.艳李")
+    d = encrypt("ff")
     print(len("缩缩缩"))
     print(e)
     print(d)
