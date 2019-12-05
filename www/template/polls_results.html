@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>results page</title>
+</head>
+<body>
+<h5>主题:{{question.question_text}}</h5>
+ <ul>
+    {% for choice in choices %}
+    <li> <a href="/polls/{{choice.id}}/vote/">{{choice.choice_text}}:   {{choice.votes}} 票</a> </li>
+    {%empty%}
+    <p>没有选项</p>
+    {%endfor%}
+ </ul>
+
+
+</body>
+</html>
